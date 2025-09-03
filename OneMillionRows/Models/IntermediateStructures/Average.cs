@@ -1,4 +1,4 @@
-namespace OneMillionRows.Models;
+namespace OneMillionRows.Models.IntermediateStructures;
 
 public class Average(decimal Sum, int Count)
 {

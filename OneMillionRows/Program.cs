@@ -6,7 +6,8 @@ using DocumentFormat.OpenXml.Packaging;
 using DocumentFormat.OpenXml.Spreadsheet;
 
 // document method
-var naiveAggregator = new NaiveAggregator("samplebook.xlsx");
+var path = Path.GetFullPath("samplesheet.xlsx");
+var naiveAggregator = new NaiveAggregator(path);
 
 // var domDocument = SpreadsheetDocument.Open("samplebook.xlsx", false);
 // var domSheetData = domDocument.WorkbookPart.WorksheetParts.First().Worksheet.Elements<SheetData>().First();
