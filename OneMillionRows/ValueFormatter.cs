@@ -4,7 +4,7 @@ internal static class ValueFormatter
     {
         return columnName switch
         {
-            "Date" => DateTime.Parse(value.ToString() ?? string.Empty),
+            "Date" => DateTime.FromOADate(double.Parse(value.ToString() ?? "0")),
             "Domain" => value.ToString() ?? string.Empty,
             "Location" => value.ToString() ?? string.Empty,
             "Value" => decimal.Parse(value.ToString() ?? "0"),

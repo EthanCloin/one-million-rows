@@ -1,3 +1,3 @@
 namespace OneMillionRows.Models.IntermediateStructures;
 
-internal record DateDomain(DateTime date, string domain) { }
+internal record DateDomain(DateTime Date, string Domain) { }
